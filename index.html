@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Privacy policy and data-deletion instructions for Arc Player.">
+  <meta name="description" content="Public privacy policies and data-deletion information for Android apps.">
   <meta name="robots" content="index, follow">
-  <title>Arc Player — Privacy Policy</title>
+  <title>App Privacy Policies</title>
   <style>
     :root {
       color-scheme: light dark;
@@ -15,146 +15,60 @@
       --muted: #5d687d;
       --border: #dce2ec;
       --accent: #3159c9;
-      --notice: #eef3ff;
     }
     * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
     body {
       margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
       background: var(--background);
       color: var(--text);
       font: 16px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
-    a { color: var(--accent); text-underline-offset: 3px; }
-    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
-    .skip-link {
-      position: absolute;
-      left: 16px;
-      top: -80px;
-      padding: 10px 14px;
+    main { width: min(100%, 680px); }
+    .card {
+      padding: clamp(24px, 6vw, 42px);
       background: var(--surface);
       border: 1px solid var(--border);
-      border-radius: 8px;
-      z-index: 2;
+      border-radius: 20px;
+      box-shadow: 0 16px 48px rgb(23 32 51 / 8%);
     }
-    .skip-link:focus { top: 16px; }
-    header { border-bottom: 1px solid var(--border); background: var(--surface); }
-    .header-inner, main, footer { width: min(100% - 40px, 820px); margin-inline: auto; }
-    .header-inner { padding: 28px 0 24px; }
-    .brand { margin: 0 0 6px; font-size: 13px; font-weight: 750; letter-spacing: .16em; text-transform: uppercase; color: var(--accent); }
-    h1 { margin: 0; font-size: clamp(30px, 6vw, 44px); line-height: 1.15; letter-spacing: -.035em; }
-    .effective { margin: 10px 0 0; color: var(--muted); font-size: 14px; }
-    main { padding: 34px 0 56px; }
-    p { margin: 0 0 16px; }
-    .notice {
-      margin: 26px 0 34px;
-      padding: 22px 24px;
-      background: var(--notice);
+    .brand { margin: 0 0 8px; color: var(--accent); font-size: 13px; font-weight: 750; letter-spacing: .14em; text-transform: uppercase; }
+    h1 { margin: 0 0 12px; font-size: clamp(30px, 7vw, 44px); line-height: 1.15; letter-spacing: -.035em; }
+    p { margin: 0 0 20px; color: var(--muted); }
+    ul { margin: 24px 0 0; padding: 0; list-style: none; }
+    li + li { margin-top: 12px; }
+    a {
+      display: block;
+      padding: 18px 20px;
       border: 1px solid var(--border);
-      border-radius: 16px;
+      border-radius: 12px;
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 650;
     }
-    .notice h2 { margin-top: 0; }
-    section { margin-top: 34px; }
-    h2 { margin: 0 0 14px; font-size: 23px; line-height: 1.25; letter-spacing: -.02em; }
-    h3 { margin: 22px 0 8px; font-size: 17px; }
-    ul, ol { margin: 0 0 18px; padding-left: 24px; }
-    li { margin: 8px 0; }
-    code {
-      padding: 2px 6px;
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      background: var(--surface);
-      font: .9em ui-monospace, SFMono-Regular, Consolas, monospace;
-    }
-    footer { padding: 24px 0 36px; border-top: 1px solid var(--border); color: var(--muted); font-size: 13px; }
+    a:hover { border-color: var(--accent); }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+    small { display: block; margin-top: 4px; color: var(--muted); font-weight: 400; }
     @media (prefers-color-scheme: dark) {
-      :root {
-        --background: #0b0e14;
-        --surface: #141923;
-        --text: #edf1f8;
-        --muted: #aab4c7;
-        --border: #293243;
-        --accent: #9db3ff;
-        --notice: #171f33;
-      }
-    }
-    @media (max-width: 520px) {
-      .header-inner, main, footer { width: min(100% - 28px, 820px); }
-      .notice { padding: 18px; border-radius: 12px; }
+      :root { --background: #0b0e14; --surface: #141923; --text: #edf1f8; --muted: #aab4c7; --border: #293243; --accent: #9db3ff; }
     }
   </style>
 </head>
 <body>
-  <a class="skip-link" href="#content">Skip to policy</a>
-  <header>
-    <div class="header-inner">
-      <p class="brand">Arc Player</p>
-      <h1>Privacy Policy</h1>
-      <p class="effective">Effective 22 November 2026 · Applies to <code>com.aeswox.arcplayer</code></p>
+  <main>
+    <div class="card">
+      <p class="brand">Public policies</p>
+      <h1>App Privacy Policies</h1>
+      <p>Privacy policies and data-deletion instructions for Android apps published by aesw0x.</p>
+      <ul aria-label="Available privacy policies">
+        <li>
+          <a href="arcplayer/">Arc Player <small>Privacy policy and deletion instructions</small></a>
+        </li>
+      </ul>
     </div>
-  </header>
-  <main id="content">
-    <p>Arc Player is a video player for files you already own: videos on your device and videos in your own Telegram cloud. This policy applies to the Google Play build and the GitHub-distributed APK.</p>
-
-    <aside class="notice" aria-labelledby="short-version">
-      <h2 id="short-version">The short version</h2>
-      <p>The developer operates <strong>no server</strong>. Arc Player contains <strong>no ads, analytics, crash-reporting SDKs, or tracking</strong>. Your library, watch progress, favorites, and preferences stay on your device. Network requests are limited to the services described below.</p>
-    </aside>
-
-    <section aria-labelledby="on-device">
-      <h2 id="on-device">What stays on your device</h2>
-      <ul>
-        <li><strong>Telegram sign-in session.</strong> Session keys are stored in Arc Player’s private storage and used only to communicate with Telegram. They are excluded from Android cloud backup and device-to-device transfer.</li>
-        <li><strong>Watch progress and preferences.</strong> Resume positions, favorites, shelf layout, and settings are stored locally in app preferences.</li>
-        <li><strong>Offline copies.</strong> Videos saved offline are ordinary files in <code>Movies/Arc Player/</code>. They can be removed from Arc Player’s Downloads page or any file manager.</li>
-        <li><strong>Search queries.</strong> Arc Player does not keep a search-history log. Queries are sent to TMDB only to retrieve the requested metadata and artwork.</li>
-      </ul>
-    </section>
-
-    <section aria-labelledby="network">
-      <h2 id="network">What leaves your device, and to whom</h2>
-      <ul>
-        <li><strong>Telegram.</strong> Signing in sends your phone number and one-time code to Telegram’s servers. Streaming or downloading cloud videos transfers those files between Telegram and your device. This is Telegram’s service under <a href="https://telegram.org/privacy" rel="noreferrer">Telegram’s privacy policy</a>. Telegram sign-in is optional; local playback works without it.</li>
-        <li><strong>TMDB.</strong> To show posters, titles, and descriptions, Arc Player sends movie or show names and search terms to TMDB’s metadata API. No account identifier, device identifier, or location is included. See <a href="https://www.themoviedb.org/privacy-policy" rel="noreferrer">TMDB’s privacy policy</a>.</li>
-        <li><strong>GitHub — APK build only.</strong> The GitHub-distributed build checks GitHub’s public release API for updates and downloads an APK if you choose to update. The Google Play build contains no updater; Play delivers updates.</li>
-        <li><strong>Your own TV on the local network.</strong> When you pair an Android TV, the phone can serve your local videos to that TV over Wi-Fi. This traffic stays on your local network and is not sent to the developer.</li>
-      </ul>
-      <p>Arc Player does not upload your videos to the developer or to a metadata provider. No user data is sold. The developer does not receive your phone number, videos, watch history, or account identifier.</p>
-    </section>
-
-    <section aria-labelledby="permissions">
-      <h2 id="permissions">Permissions and why they exist</h2>
-      <ul>
-        <li><strong>Videos and media access:</strong> to list and play your own media library.</li>
-        <li><strong>Notifications:</strong> for optional download progress and completion notices.</li>
-        <li><strong>Foreground service and wake lock:</strong> so a download or TV session you started can continue with the screen off. Both use ongoing notifications and stop when finished.</li>
-        <li><strong>Install packages — APK build only:</strong> to hand a downloaded update to Android’s installer after you tap Install. This permission is absent from the Google Play build.</li>
-      </ul>
-    </section>
-
-    <section aria-labelledby="deletion">
-      <h2 id="deletion">Deleting your data</h2>
-      <ol>
-        <li>Open <strong>Android Settings → Apps → Arc Player → Storage → Clear storage</strong>, or uninstall Arc Player. This removes the locally stored Telegram session, watch progress, favorites, and preferences.</li>
-        <li>Delete offline videos from Arc Player’s Downloads page or from <code>Movies/Arc Player/</code> using a file manager.</li>
-        <li>Manage or delete your Telegram account, phone number, and cloud videos in Telegram’s own app and account settings.</li>
-      </ol>
-      <p>The developer keeps no server-side copy of your data, so there is nothing additional to request from the developer.</p>
-    </section>
-
-    <section aria-labelledby="children">
-      <h2 id="children">Children</h2>
-      <p>Arc Player is not directed to children. It does not provide a social network, public content feed, or accounts managed by the developer.</p>
-    </section>
-
-    <section aria-labelledby="changes-contact">
-      <h2 id="changes-contact">Changes and contact</h2>
-      <p>If this policy changes, the updated version will be published at this URL with a new effective date.</p>
-      <p>For questions or requests, <a href="https://github.com/aesw0x/arcplayer-privacy/issues" rel="noreferrer">open an issue in the public Arc Player privacy repository</a>. Do not include phone numbers, login codes, passwords, session files, or private videos in a public issue.</p>
-    </section>
   </main>
-  <footer>
-    Arc Player · Privacy policy for the Android app <code>com.aeswox.arcplayer</code>
-  </footer>
 </body>
 </html>

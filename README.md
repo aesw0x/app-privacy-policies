@@ -1,7 +1,11 @@
-# Arc Player Privacy
+# App Privacy Policies
 
-Public privacy policy and data-deletion instructions for Arc Player.
+Public privacy policies and data-deletion instructions for Android apps.
 
-Live page: https://aesw0x.github.io/arcplayer-privacy/
+Live site: https://aesw0x.github.io/app-privacy-policies/
 
-This repository intentionally contains no app source code, credentials, analytics, or tracking.
+## Published policies
+
+- [Arc Player](https://aesw0x.github.io/app-privacy-policies/arcplayer/)
+
+Each app has its own directory and stable public URL. This repository intentionally contains no app source code, credentials, analytics, or tracking.
